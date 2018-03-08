@@ -1,0 +1,14 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  background-image: /back.jpg;
+}
+
+
+h1 {
+  font-family:Verdana;
+  text-align="center";
+  font-size:20pt;
+  color:#00FF00;
+}
