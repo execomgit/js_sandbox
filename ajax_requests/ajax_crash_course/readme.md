@@ -1,7 +1,7 @@
 
 ## Source
 
-- (AJAX Crash Course - Vanilla JavaScript)[https://youtu.be/82hnvUYY6QA]
+- [AJAX Crash Course - Vanilla JavaScript](https://youtu.be/82hnvUYY6QA)
 
 
 ## Description
