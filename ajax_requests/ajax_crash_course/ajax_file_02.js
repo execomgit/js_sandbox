@@ -9,9 +9,11 @@ function loadText() {
   // OPEN - type, url/file, async
   myRequest.open("GET", "ajax_file_01.txt", true);
 
+  console.log("READY_STATE: ", myRequest.readyState);
+
   myRequest.onload = function(){
     if(this.status == 200){
-      console.log(this.responseText);
+      // console.log(this.responseText);
     }
   }
 
