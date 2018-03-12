@@ -1,28 +1,22 @@
 
 // Create event listener
-document.getElementById("btn").addEventListener("click", loadText);
-function loadText() {
+document.getElementById("btn").addEventListener("click", loadUser);
 
-  // create new XHR object
-  var myRequest = new XMLHttpRequest();
+function loadUser () {
+  var fetchUser = new XMLHttpRequest();
+  fetchUser.open('GET', 'ajax_json_users.json', true);
 
-  // OPEN - type, url/file, async
-  myRequest.open("GET", "ajax_file_01.txt", true);
-
-
-  myRequest.onload = function(){
-    if(this.status == 200){
-      document.getElementById("bodytext").innerHTML = myRequest.responseText;
-      console.log(this.responseText);
+  fetchUser.onload = function(){
+    if(fetchUser.status == 200){
+      var resultReceived = JSON.parse(fetchUser.responseText);
+      console.log(resultReceived[1].name);
     }
   }
+  fetchUser.send();
 
 
-
-
-  //Sends Request
-  myRequest.send();
 }
+
 
 
 
