@@ -1,0 +1,25 @@
+
+* {
+  font-family: "Exo", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+#btn{
+  width: 120px;
+  height: 25px;
+  margin-top: 15px;
+  margin-left: 20px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+#bodytext{
+margin-top: 10px;
+margin-left: 10px;
+line-height: 1.1;
+}

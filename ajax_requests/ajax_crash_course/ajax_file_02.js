@@ -11,11 +11,19 @@ function loadText() {
 
   console.log("READY_STATE: ", myRequest.readyState);
 
-  myRequest.onload = function(){
-    if(this.status == 200){
-      // console.log(this.responseText);
-    }
-  }
+  // myRequest.onload = function(){
+  //   if(this.status == 200){
+  //     // console.log(this.responseText);
+  //   }
+  // }
+
+  myRequest.onreadystatechange = function(){
+    console.log("READY_STATE: ", myRequest.readyState);
+    if(myRequest.readyState == 4 && myRequest.status == 200){
+       // console.log(this.responseText);
+    };
+  };
+
 
   //Sends Request
   myRequest.send();
