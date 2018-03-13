@@ -10,7 +10,7 @@
 
 
 #btn {
-  width: 120px;
+  width: 160px;
   height: 30px;
   margin-top: 15px;
   margin-left: 20px;
@@ -23,7 +23,7 @@
 
 }
 
-body h2 {
+body h2, body ul {
   margin-top: 15px;
   margin-left: 20px;
 }

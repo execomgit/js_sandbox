@@ -34,3 +34,12 @@ readyState Values
 ### ajax_file_03
 
 something
+
+
+### ajax_json_01
+- Consuming local JSON file "ajax_json_users.json" and presentig it through HTML table.
+
+
+### ajax_json_02
+- Consuming remote GitHub API.
+- [api.github/users](https://api.github.com/users)
