@@ -10,7 +10,7 @@
 
 
 #btn {
-  width: 160px;
+  width: 180px;
   height: 30px;
   margin-top: 15px;
   margin-left: 20px;
@@ -20,10 +20,20 @@
 
 #users {
   font-size: 12px;
-
 }
 
 body h2, body ul {
   margin-top: 15px;
   margin-left: 20px;
+}
+
+.githubUsers{
+  display: flex;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #f4f4f4;
+}
+
+.githubUsers ul{
+  list-style: none;
 }

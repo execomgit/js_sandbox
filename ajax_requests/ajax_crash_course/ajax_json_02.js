@@ -14,12 +14,12 @@ function githubUsers() {
       var output = '';
       for(var i in userResponse) {
         output +=
-        '<div class="githubUsers">'
-        '<img src="'+userResponse[i].avatar_url+'" width="70" height="70">' +
-        '<ul>'
-        '<li>ID: '+userResponse[i].id+'</li>' +
-        '<li>Login: '+userResponse[i].login+'</li>' +
-        '</ul>'
+        '<div class="githubUsers">' +
+          '<img src="'+userResponse[i].avatar_url+'" width="70" height="70">' +
+          '<ul>'+
+          '<li>ID: '+userResponse[i].id+'</li>' +
+          '<li>Login: '+userResponse[i].login+'</li>' +
+          '</ul>'+
         '</div>';
       }
       document.getElementById('users').innerHTML = output;
