@@ -1,3 +1,7 @@
+<?php
+  inchude 'ajax_db_01_dbh.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,22 +14,40 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Exo:100,200,400&amp;lang=en" />
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300&amp;lang=en" />
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="ajax_db_01.css">
 
   </head>
 
   <body>
-    <button id="btn" type="button" name="button">Load GitHub Users:</button>
-    <br>
-    <h2>Users</h2>
-    <div id="users">
+
+    <div id="commentsContainer">
+      <?php
+          $sql = "SELECT * FROM city LIMIT 2";
+          $result = mysqli_query($conn, $sql);
+          if (mysqli_num_rows($result) > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+              echo "<p>";
+              echo $row['Name'];
+              echo "<br>";
+              echo $row['District'];
+              echo "<p>";
+                           }
+            } else {
+            echo "There are no comments";
+          }
+
+      ?>
 
     </div>
 
+    <button id="btn" type="button" name="button">Show more comments</button>
+    <br>
 
 
 
-    <script src="ajax_db_01.js"></script>
+
+    <!-- <script src="ajax_db_01.js"></script> -->
 
   </body>
 
